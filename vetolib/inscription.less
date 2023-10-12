@@ -28,7 +28,7 @@ section{
             background-color: #fff;
             border-radius: 5px;
             width: 400px;
-            height: 850PX;
+            height: 820PX;
             margin: 50px auto;
             padding: 0px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -58,22 +58,31 @@ section{
                     margin: 5px 0;
                     padding: 20px;
                     border-radius: 10px;
-                    border: 1px solid #B4BAC9; 
-                } 
+                    border: 1px solid #B4BAC9;
+        
+                }:nth-child(1)::placeholder{
+                    color: #cccccc;
+                }:nth-child(2)::placeholder{
+                    color: #cccccc
+                }:nth-child(3)::placeholder{
+                    color: #cccccc;
+                }:nth-child(4)::placeholder{
+                    color: #cccccc;
+                }
 
             //style des textes "mdp, am, np, cmdp"
-                #np::placeholder{
-                    color:#F5F5F7;
-                }
-                #am::placeholder{
-                    color:#F5F5F7;
-                }
-                #mdp::placeholder{
-                    color:#F5F5F7;
-                }
-                #cmdp::placeholder{
-                    color:#F5F5F7;
-                }
+                // #np::placeholder{
+                //     color:#F5F5F7;
+                // }
+                // #am::placeholder{
+                //     color:#F5F5F7;
+                // }
+                // #mdp::placeholder{
+                //     color:#F5F5F7;
+                // }
+                // #cmdp::placeholder{
+                //     color:#F5F5F7;
+                // }
             
                 //partie accepter la conditions
 
@@ -186,12 +195,12 @@ section{
                     font-weight: 600;
                     line-height: normal;
                     letter-spacing: 0.72px;
+                    &:hover{
+                        background-color: darken(#83C7A4, 10%);
+                    }
                 }
 
-                button:hover {
-                    background-color: darken(#83C7A4, 10%);
-                }
-
+ 
                 p a { //a revoir au niveau syntaxe
                     color: #2C6145;
                     font-weight: 600;
